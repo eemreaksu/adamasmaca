@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Adam Asmaca</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adam Asmaca</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Adam Asmaca</h1>
-    <p>Gizlenmiş Kelimeyi Bulmak İçin Bir Harf Giriniz </p>
-    <div class="container">
-        <svg height="250" width="250" class="grafik">
-            <!-- sehpa -->
-            <line x1="50" y1="20" x2="130" y2="20"/>
-            <line x1="130" y1="20" x2="130" y2="50"/>
-            <line x1="50" y1="20" x2="50" y2="250"/>
-            <line x1="10" y1="250" x2="100" y2="250"/>
 
-            <!-- KAFA -->
-            <circle cx="130" cy="70" r="20" class="item"/>
+  <h1>🎯 Adam Asmaca</h1>
+  <p>Klavyeden bir harf girerek kelimeyi tahmin et</p>
 
-            <!-- gövde -->
-            <line x1="130" y1="90" x2="130" y2="170" class="item"/>
+  <div class="game-container">
 
-            <!-- kollar -->
-             <line x1="130" y1="120" x2="100" y2="100" class="item"/>
-             <line x1="130" y1="120" x2="160" y2="100" class="item"/>
+    <!-- Adam çizimi -->
+    <svg width="250" height="250" class="grafik">
+      <line x1="50" y1="20" x2="130" y2="20"/>
+      <line x1="130" y1="20" x2="130" y2="50"/>
+      <line x1="50" y1="20" x2="50" y2="250"/>
+      <line x1="10" y1="250" x2="90" y2="250"/>
 
-             <!-- BACAKLAR -->
-            <line x1="130" y1="170" x2="100" y2="190" class="item"/>
-            <line x1="130" y1="170" x2="160" y2="190" class="item"/>
-        </svg>
+      <circle cx="130" cy="70" r="20" class="item"/>
+      <line x1="130" y1="90" x2="130" y2="170" class="item"/>
+      <line x1="130" y1="120" x2="100" y2="100" class="item"/>
+      <line x1="130" y1="120" x2="160" y2="100" class="item"/>
+      <line x1="130" y1="170" x2="100" y2="190" class="item"/>
+      <line x1="130" y1="170" x2="160" y2="190" class="item"/>
+    </svg>
 
-        <div id="wrong-letters">
-            <h3>Hatalı Harfler</h3>
-            <span>a,b,c</span>
-        </div>
+    <div id="wrong-letters"></div>
+    <div id="word"></div>
+  </div>
 
-        <div id="word">
-            
-        </div>
+  <!-- Popup -->
+  <div id="popup-container">
+    <div class="popup">
+      <h2 id="result-message"></h2>
+      <button id="play-again">Tekrar Oyna</button>
     </div>
+  </div>
 
+  <div id="notification">Bu harfi zaten girdin</div>
 
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
